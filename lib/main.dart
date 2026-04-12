@@ -164,13 +164,13 @@ class _MoldListScreenState extends State<MoldListScreen> {
                     child: Text('Инв. №', style: TextStyle(fontWeight: FontWeight.bold)),
                   ),
                   Expanded(
-                    flex: 3,
+                    flex: 4,
                     child: Text('Название', style: TextStyle(fontWeight: FontWeight.bold)),
                   ),
-                  Expanded(
-                    flex: 1,
-                    child: Text('Вес (кг)', style: TextStyle(fontWeight: FontWeight.bold)),
-                  ),
+                  // Expanded(
+                  //   flex: 1,
+                  //   child: Text('Вес (кг)', style: TextStyle(fontWeight: FontWeight.bold)),
+                  // ),
                 ],
               ),
             ),
@@ -190,9 +190,9 @@ class _MoldListScreenState extends State<MoldListScreen> {
                         // flex: 1 - узкая колонка
                         Expanded(flex: 1, child: Text(mold.inventoryNumber)),
                         // flex: 3 - в 3 раза шире
-                        Expanded(flex: 3, child: Text(mold.moldName)),
+                        Expanded(flex: 4, child: Text(mold.moldName)),
                         // flex: 1 - узкая колонка
-                        Expanded(flex: 1, child: Text('${mold.moldWeight}')),
+                        // Expanded(flex: 1, child: Text('${mold.moldWeight}')),
                       ],
                     ),
                   );
