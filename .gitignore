@@ -1,0 +1,21 @@
+# Игнорируем результаты сборки
+build/
+bin/
+obj/
+
+# Игнорируем временные файлы Flutter
+.dart_tool/
+.packages
+.pub-cache/
+.pub/
+
+# Игнорируем тяжелые файлы Windows-сборки (из-за которых ошибка)
+windows/
+*.pdb
+*.exe
+*.dll
+
+# Игнорируем логи и настройки IDE
+.idea/
+.vscode/
+*.log
