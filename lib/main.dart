@@ -34,7 +34,7 @@ class _MoldListScreenState extends State<MoldListScreen> {
   final List<Mold> _allMolds = [
     Mold(inventoryNumber: 'A-001', moldName: 'Крышка бака', moldWeight: 0),
     Mold(inventoryNumber: 'B-042', moldName: 'Корпус фильтра', moldWeight: 0),
-    Mold(inventoryNumber: 'A-003', moldName: 'Ручка двери', moldWeight: ),
+    Mold(inventoryNumber: 'A-003', moldName: 'Ручка двери', moldWeight: 0 ),
     Mold(inventoryNumber: 'C-110', moldName: 'Панель приборов', moldWeight: 0),
   ];
 
