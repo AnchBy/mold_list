@@ -47,7 +47,15 @@
     document.addEventListener('touchmove', function(e) {
       e.preventDefault();
     }, { passive: false });
+
+    document.addEventListener('DOMContentLoaded', function() {
+    if (window.Telegram && window.Telegram.WebApp) {
+      window.Telegram.WebApp.ready();
+      window.Telegram.WebApp.disableVerticalSwipes();
+    }
+  });
   </script>
+  
 
 </body>
 </html>
