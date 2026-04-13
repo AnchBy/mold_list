@@ -59,7 +59,7 @@ class _MoldListScreenState extends State<MoldListScreen> {
     Mold(inventoryNumber: '850-4\n126-5', moldName: 'Ведро 10л (со съем)', moldWeight: 0),
     Mold(inventoryNumber: '187-1', moldName: 'Ведро 10л ПП', moldWeight: 0),
     Mold(inventoryNumber: '285-1\n135-1\n137-3', moldName: 'Ведро 10л (сад/огород)', moldWeight: 0),
-    Mold(inventoryNumber: '503-1', moldName: 'Ручка ведра 10л (сад/огород)', moldWeight: 0),
+    Mold(inventoryNumber: '503-1', moldName: 'Ручка ведра 10л с планкой (сад/огород)', moldWeight: 0),
     Mold(inventoryNumber: '477-1\n468-2\n469-3', moldName: 'Крышка ведра 10л (сад/огород)', moldWeight: 0),
     Mold(inventoryNumber: '189', moldName: 'Крышка контейнера для мусора', moldWeight: 0),
     Mold(inventoryNumber: '402-1', moldName: 'Ведро 5.5л', moldWeight: 0),
