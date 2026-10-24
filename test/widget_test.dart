@@ -11,20 +11,21 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:mold_list/main.dart';
 
 void main() {
-  testWidgets('Counter increments smoke test', (WidgetTester tester) async {
-    // Build our app and trigger a frame.
-    await tester.pumpWidget(const MyApp());
+  testWidgets('Список пресс-форм отображается и фильтруется поиском',
+      (WidgetTester tester) async {
+    await tester.pumpWidget(const MoldApp());
 
-    // Verify that our counter starts at 0.
-    expect(find.text('0'), findsOneWidget);
-    expect(find.text('1'), findsNothing);
+    // Заголовок экрана
+    expect(find.text('Пресс-формы от Геннадия Лыщенко'), findsOneWidget);
 
-    // Tap the '+' icon and trigger a frame.
-    await tester.tap(find.byIcon(Icons.add));
+    // Первая позиция списка видна
+    expect(find.text('Ведро 15л овальное'), findsOneWidget);
+
+    // Поиск фильтрует список по названию
+    await tester.enterText(find.byType(TextField), 'Грабли');
     await tester.pump();
 
-    // Verify that our counter has incremented.
-    expect(find.text('0'), findsNothing);
-    expect(find.text('1'), findsOneWidget);
+    expect(find.text('Грабли веерные'), findsOneWidget);
+    expect(find.text('Ведро 15л овальное'), findsNothing);
   });
 }
